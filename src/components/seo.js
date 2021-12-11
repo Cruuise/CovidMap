@@ -1,3 +1,4 @@
+// Get rid of author in line 22 to fix error
 /**
  * SEO component that queries for data with
  *  Gatsby's useStaticQuery React hook
@@ -18,7 +19,7 @@ function Seo({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
-            author
+            
           }
         }
       }
