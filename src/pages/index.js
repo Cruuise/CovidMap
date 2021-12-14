@@ -11,6 +11,11 @@ import Layout from "components/Layout";
 import Container from "components/Container";
 import Map from "components/Map";
 import Snippet from "components/Snippet";
+import Button from 'react-bootstrap/Button';
+import './App.css';
+import overlayFactory from 'react-bootstrap-table2-overlay';
+import BootstrapTable from 'react-bootstrap-table-next';
+
 
 const LOCATION = {
   lat: 34.0522,
@@ -18,6 +23,7 @@ const LOCATION = {
 };
 const CENTER = [LOCATION.lat, LOCATION.lng];
 const DEFAULT_ZOOM = 2;
+
 
 
 const IndexPage = () => {
@@ -92,6 +98,7 @@ const IndexPage = () => {
     }
 
     const geoJsonLayers = new L.GeoJSON(geoJson, {
+
       pointToLayer: (feature = {}, latlng) => {
         const { properties = {} } = feature;
         let updatedFormatted;
@@ -116,6 +123,18 @@ const IndexPage = () => {
         }
     
         const html = `
+     
+
+<script
+  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+  crossorigin="anonymous"
+/>
+
           <span class="icon-marker">
             <span class="icon-marker-tooltip">
               <h2>${country}</h2>
@@ -152,19 +171,26 @@ const IndexPage = () => {
     whenCreated: mapEffect,
   };
 
+
+
   return (
+    
     <Layout pageName="home">
       <Helmet>
         <title>Home Page</title>
       </Helmet>
 
+<body>
     <div className="tracker">
+
+
       <Map {...mapSettings} />
       <div className="tracker-stats">
         <ul>
           { dashboardStats.map(({ primary = {}, secondary = {} }, i ) => {
             return (
-              <li key={`Stat-${i}`} className="tracker-stat">
+              <li key={`Stat-${i}`} className="tracker-stat text-red">
+                 
               { primary.value && (
                 <p className="tracker-stat-primary">
                   { primary.value }
@@ -186,11 +212,16 @@ const IndexPage = () => {
   <div className="tracker-last-updated">
     <p>Last Updated: { stats ? friendlyDate( stats?.updated ) : '-' } </p>
   </div>
+  </body>
 
   <Container type="content" className="text-center home-start"> 
-    <h3>Goal Diggers</h3>
+    <h3 class="text-red">Goal Diggers</h3>
+    
+    <Button  variant="primary">Button #1</Button>
+  <Button  variant="secondary" className="mx-2">Button #2</Button>
     </Container>
   </Layout>
+  
   );
 };
 

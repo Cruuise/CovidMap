@@ -8,6 +8,15 @@ Jumpstart your next Gatsby mapping project with Leaflet!
 ## ⚡ Quick Deploy
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/colbyfayock/gatsby-starter-leaflet) [![Deploy with Vercel Now](https://zeit.co/button)](https://vercel.com/import/project?template=https://github.com/colbyfayock/gatsby-starter-leaflet)
 
+### Quick Start
+```
+run the following in your terminal
+git clone https://github.com/Cruuise/CovidMap
+cd CovidMap
+yarn add gatsby-cli
+yarn develop
+```
+
 
 ## 🧰 What This Includes
 * [Yarn](https://yarnpkg.com/en/)
@@ -17,18 +26,15 @@ Jumpstart your next Gatsby mapping project with Leaflet!
 * [Resolve Src](https://github.com/alampros/gatsby-plugin-resolve-src)
 * [Leaflet](https://leafletjs.com/)
 * [React Leaflet](https://react-leaflet.js.org)
+* [React Bootstrap UI](https://react-bootstrap.github.io/getting-started/introduction)
 
 ## 🚀 Getting Started
 
 ### Requirements
 * [Gatsby CLI](https://www.npmjs.com/package/gatsby-cli)
 * [Yarn](https://yarnpkg.com/en/)
+* [React Bootstrap UI](https://react-bootstrap.github.io/getting-started/introduction)
 
-### Quick Start
-Run the following in your favorite terminal:
-```
-gatsby new my-map-app https://github.com/colbyfayock/gatsby-starter-leaflet
-```
 
 ### Starting from Scratch
 * Set up Yarn: https://yarnpkg.com/lang/en/docs/install/#mac-stable)[https://yarnpkg.com/lang/en/docs/install/

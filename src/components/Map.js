@@ -7,6 +7,7 @@ import { isDomAvailable } from "lib/util";
 
 const DEFAULT_MAP_SERVICE = "OpenStreetMap";
 
+
 const Map = (props) => {
   const {
     children,
@@ -48,6 +49,7 @@ const Map = (props) => {
         {children}
         {basemap && <TileLayer {...basemap} />}
         <ZoomControl position="bottomright" />
+   
       </MapContainer>
     </div>
   );
