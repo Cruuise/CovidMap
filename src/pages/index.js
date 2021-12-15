@@ -11,10 +11,8 @@ import Layout from "components/Layout";
 import Container from "components/Container";
 import Map from "components/Map";
 import Snippet from "components/Snippet";
-import Button from 'react-bootstrap/Button';
 import './App.css';
-import overlayFactory from 'react-bootstrap-table2-overlay';
-import BootstrapTable from 'react-bootstrap-table-next';
+import { Card, Button, CardGroup, CardBody, CardSubtitle, CardTitle, CardText, CardImg } from 'reactstrap';
 
 
 const LOCATION = {
@@ -134,6 +132,9 @@ const IndexPage = () => {
   integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
   crossorigin="anonymous"
 />
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" />
+</head>
 
           <span class="icon-marker">
             <span class="icon-marker-tooltip">
@@ -147,6 +148,7 @@ const IndexPage = () => {
             </span>
             ${ casesString }
           </span>
+    
         `;
       
         return L.marker( latlng, {
@@ -215,10 +217,219 @@ const IndexPage = () => {
   </body>
 
   <Container type="content" className="text-center home-start"> 
-    <h3 class="text-red">Goal Diggers</h3>
-    
-    <Button  variant="primary">Button #1</Button>
-  <Button  variant="secondary" className="mx-2">Button #2</Button>
+
+    <CardGroup>
+    <div class="container">
+    <div class="row">
+   
+    <div class="col-sm">
+    <Card color="dark" id="rcorners1">
+    <CardImg
+      alt="Card image cap"
+      src="https://www.coe.int/documents/21202288/62129062/languages-COVID-19_used+by+CoE+main+portal.jpg/b9882ed7-9e7b-caf8-c6e4-9cec0f125baa?t=1585837178000"
+      top
+      width="100%"
+    />
+    <CardBody>
+      <CardTitle tag="h5" class="text-red">
+        Global infection
+      </CardTitle>
+      <CardSubtitle
+        className="mb-2 text-muted"
+        tag="h6" 
+      >
+        Pie Chart for global infection rates
+      </CardSubtitle>
+      <CardText>
+        <a class="text-red" ></a>
+      </CardText>
+      
+
+<div id="container" class="link">
+  <Button>
+        View
+      </Button>
+      <span class="tip">
+      <iframe id="serviceFrameSend" src="https://clever-sinoussi-cd959c.netlify.app/" height="400" width="500" title="Iframe Example"></iframe>
+      </span>
+      </div>
+    </CardBody>
+  </Card>
+  </div>
+ 
+  <div class="col-sm">
+  <Card color="dark" id="rcorners1">
+    <CardImg
+      alt="Card image cap"
+      src="https://healthblog.uofmhealth.org/sites/consumer/files/2021-08/three-grey-syringes-orange-background.jpg"
+      top
+      width="100%"
+    />
+    <CardBody>
+      <CardTitle tag="h5" class="text-red">
+        Vaccines
+      </CardTitle>
+      <CardSubtitle
+        className="mb-2 text-muted"
+        tag="h6"
+      >
+        See Vaccine statistics
+      </CardSubtitle>
+      <CardText class="text-light">
+      <a class="text-red" ></a>
+      </CardText>
+      <Button>
+        View
+      </Button>
+    </CardBody>
+  </Card>
+  </div>
+
+  <div class="col-sm">
+  <Card color="dark" id="rcorners1">
+    <CardImg
+      alt="Card image cap"
+      src="https://www.securitymagazine.com/ext/resources/images/ransomware-cyber.jpg?1627391855"
+      top
+      width="100%"
+     
+    />
+    <CardBody>
+      <CardTitle tag="h5" class="text-red">
+        US Stats
+      </CardTitle>
+      <CardSubtitle
+        className="mb-2 text-muted"
+        tag="h6" 
+      >
+        View US infection data
+      </CardSubtitle>
+      <CardText  class="text-light">
+      <a class="text-red" ></a>
+      </CardText>
+      <div id="overlay" onclick="off()"></div>
+      <Button>
+        View
+      </Button>
+    </CardBody>
+  </Card>
+ 
+  </div>
+  </div>
+  </div>
+  </CardGroup>
+
+
+
+  <CardGroup>
+    <div class="container">
+    <div class="row">
+   
+    <div class="col-sm">
+    <Card color="dark" id="rcorners1">
+    <CardImg
+      alt="Card image cap"
+      src="https://img.securityinfowatch.com/files/base/cygnus/siw/image/2021/09/bigstock_Cyber_Crime_Abstract_Concept__278825773.6132659179687.png?auto=format&w=1050&h=590&fit=clip"
+      top
+      width="100%"
+    />
+    <CardBody>
+      <CardTitle tag="h5" class="text-red">
+        Deaths
+      </CardTitle>
+      <CardSubtitle
+        className="mb-2 text-muted"
+        tag="h6"
+      >
+        View COVID-19 deaths
+      </CardSubtitle>
+      <CardText>
+        <a class="text-red" ></a>
+      </CardText>
+      
+
+<div id="container" class="link">
+  <Button>
+        View
+      </Button>
+      <span class="tip">
+      <iframe id="serviceFrameSend" src="https://clever-sinoussi-cd959c.netlify.app/" height="400" width="500" title="Iframe Example"></iframe>
+      </span>
+      </div>
+    </CardBody>
+  </Card>
+  </div>
+ 
+  <div class="col-sm">
+  <Card color="dark" id="rcorners1">
+    <CardImg
+      alt="Card image cap"
+      src="https://content.govdelivery.com/attachments/fancy_images/USNIST/2021/06/4670433/3618401/ss-health-medical-symbol-processor-74443075_crop.jpg"
+      top
+      width="100%"
+    />
+    <CardBody>
+      <CardTitle tag="h5">
+        Card title
+      </CardTitle>
+      <CardSubtitle
+        className="mb-2 text-muted"
+        tag="h6"
+      >
+        View vaccine stats
+      </CardSubtitle>
+      <CardText class="text-light">
+      <a class="text-red" ></a>
+      </CardText>
+      <Button>
+        View
+      </Button>
+    </CardBody>
+  </Card>
+  </div>
+
+  <div class="col-sm">
+  <Card color="dark" id="rcorners1">
+    <CardImg
+      alt="Card image cap"
+      src="https://files.techmahindra.com/static/img/cyber-scurity.jpg"
+      top
+      width="100%"
+     
+    />
+    <CardBody>
+      <CardTitle tag="h5" class="text-red">
+        Global Infection
+      </CardTitle>
+      <CardSubtitle
+        className="mb-2 text-muted"
+        tag="h6"
+      >
+        View world stats
+      </CardSubtitle>
+      <CardText class="text-light">
+      <a class="text-red" ></a>
+      </CardText>
+      <div id="overlay" onclick="off()"></div>
+      <div id="container" class="link">
+      
+      <Button>
+        View
+      </Button>
+      <span class="tip">
+      <iframe id="globe-stat" src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="600px"></iframe>
+      </span>
+      </div>
+    </CardBody>
+  </Card>
+  
+  </div>
+
+
+  </div>
+  </div>
+  
+  </CardGroup>
     </Container>
   </Layout>
   
