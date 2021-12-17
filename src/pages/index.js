@@ -229,13 +229,13 @@ const IndexPage = () => {
     />
     <CardBody>
       <CardTitle tag="h5" class="text-red">
-        Global infection
+        Testing Per Continent 
       </CardTitle>
       <CardSubtitle
         className="mb-2 text-muted"
         tag="h6" 
       >
-        Pie Chart for global infection rates
+        View stats for testing
       </CardSubtitle>
       <CardText>
         <a class="text-red" ></a>
