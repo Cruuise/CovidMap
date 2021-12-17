@@ -247,7 +247,7 @@ const IndexPage = () => {
         View
       </Button>
       <span class="tip">
-      <iframe id="btn1" src="https://dazzling-hypatia-b2d573.netlify.app/" title="description"></iframe>
+      <iframe id="serviceFrameSend" src="https://dazzling-hypatia-b2d573.netlify.app/" height="400" width="500" title="description"></iframe>
       </span>
       </div>
     </CardBody>
