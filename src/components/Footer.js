@@ -13,6 +13,7 @@ const Footer = () => {
         <p>
           &copy; {new Date().getFullYear()},{" "}
           <a href={authorUrl}>Group GD</a>
+          <a href='https://disease.sh/docs/#/'> Data</a>
         </p>
       </Container>
     </footer>
