@@ -121,17 +121,6 @@ const IndexPage = () => {
         }
     
         const html = `
-     
-
-<script
-  src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-  crossorigin></script>
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-  crossorigin="anonymous"
-/>
 <head>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" />
 </head>
@@ -148,7 +137,15 @@ const IndexPage = () => {
             </span>
             ${ casesString }
           </span>
-    
+          <script
+          src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+          crossorigin></script>
+          <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous"
+        />
         `;
       
         return L.marker( latlng, {
@@ -250,7 +247,7 @@ const IndexPage = () => {
         View
       </Button>
       <span class="tip">
-      <iframe id="serviceFrameSend" src="https://clever-sinoussi-cd959c.netlify.app/" height="400" width="500" title="Iframe Example"></iframe>
+      <iframe id="btn1" src="https://dazzling-hypatia-b2d573.netlify.app/" title="description"></iframe>
       </span>
       </div>
     </CardBody>
@@ -278,9 +275,14 @@ const IndexPage = () => {
       <CardText class="text-light">
       <a class="text-red" ></a>
       </CardText>
-      <Button>
+      <div id="container" class="link">
+  <Button>
         View
       </Button>
+      <span class="tip">
+      <iframe id="serviceFrameSend" src="https://eloquent-payne-df6fb3.netlify.app" height="400" width="500" title="Iframe Example"></iframe>
+      </span>
+      </div>
     </CardBody>
   </Card>
   </div>
@@ -307,10 +309,14 @@ const IndexPage = () => {
       <CardText  class="text-light">
       <a class="text-red" ></a>
       </CardText>
-      <div id="overlay" onclick="off()"></div>
-      <Button>
+  
+      <div id="container" class="link">
+  <Button>
         View
       </Button>
+      <span class="tip">
+      <iframe id="us-data" src="https://public.domo.com/cards/axpDJ" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>      </span>
+      </div>
     </CardBody>
   </Card>
  
@@ -353,7 +359,7 @@ const IndexPage = () => {
         View
       </Button>
       <span class="tip">
-      <iframe id="serviceFrameSend" src="https://clever-sinoussi-cd959c.netlify.app/" height="400" width="500" title="Iframe Example"></iframe>
+      <iframe id="serviceFrameSend" src="https://clever-sinoussi-cd959c.netlify.app/"  height="400" width="500" title="Iframe Example"></iframe>
       </span>
       </div>
     </CardBody>
@@ -370,20 +376,25 @@ const IndexPage = () => {
     />
     <CardBody>
       <CardTitle tag="h5">
-        Card title
+        Recovered
       </CardTitle>
       <CardSubtitle
         className="mb-2 text-muted"
         tag="h6"
       >
-        View vaccine stats
+        Recovery stats post-infection
       </CardSubtitle>
       <CardText class="text-light">
       <a class="text-red" ></a>
       </CardText>
-      <Button>
+      <div id="container" class="link">
+  <Button>
         View
       </Button>
+      <span class="tip">
+      <iframe id="serviceFrameSend" src="https://elegant-bhabha-00b081.netlify.app" height="400" width="500" title="Iframe Example"></iframe>
+      </span>
+      </div>
     </CardBody>
   </Card>
   </div>
@@ -410,7 +421,7 @@ const IndexPage = () => {
       <CardText class="text-light">
       <a class="text-red" ></a>
       </CardText>
-      <div id="overlay" onclick="off()"></div>
+      
       <div id="container" class="link">
       
       <Button>
@@ -422,7 +433,7 @@ const IndexPage = () => {
       </div>
     </CardBody>
   </Card>
-  
+
   </div>
 
 
@@ -430,6 +441,8 @@ const IndexPage = () => {
   </div>
   
   </CardGroup>
+
+  <iframe id="bottom-stack" src="https://adoring-curran-21390f.netlify.app" ></iframe>
     </Container>
   </Layout>
   
