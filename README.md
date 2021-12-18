@@ -6,6 +6,9 @@
 This project was made with Colby Fayock's Covid Dashboard:
 https://github.com/colbyfayock/coronavirus-map-dashboard
 
+A live version of Colby Fayock's Covid Dahsboard can be found here:
+https://elastic-perlman-08b83a.netlify.app/
+
 # To run this project
 1. download the zip or do a git clone
 2. npm install gatsby
